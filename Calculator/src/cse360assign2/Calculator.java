@@ -27,11 +27,11 @@ public class Calculator {
 	
 	/**
 	 * getTotal method returns the variable total 
-	 * 
 	 * @return int total 
 	 */
 	public int getTotal () {
-		return 0;
+		//returns the current value in total
+		return total;
 	}
 	
 	/**
@@ -39,7 +39,8 @@ public class Calculator {
 	 * @param int value
 	 */
 	public void add (int value) {
-		
+		//sets the value in total equal to total plus the value
+		total = total + value; 
 	}
 	
 	/**
@@ -47,7 +48,8 @@ public class Calculator {
 	 * @param int value
 	 */
 	public void subtract (int value) {
-		
+		//sets the value in total equal to total minus the value
+		total = total - value;
 	}
 	
 	/**
@@ -55,7 +57,8 @@ public class Calculator {
 	 * @param int value
 	 */
 	public void multiply (int value) {
-		
+		//sets the value in total equal to total times the value
+		total = total * value; 
 	}
 	
 	/**
@@ -63,7 +66,12 @@ public class Calculator {
 	 * @param int value
 	 */
 	public void divide (int value) {
-		
+		//sets the value of total = 0 if value is zero
+		if (value == 0)
+			total = 0;
+		//sets the value of total equal to total divided by value
+		else 
+			total = total / value;
 	}
 	
 	/**
